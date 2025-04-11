@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import { format, subDays, differenceInDays } from 'date-fns';
 import { getMoodEntries, MoodEntry } from '@/utils/storage';
-import { SmileOpen, Smile, Meh, Frown, FrownOpen, Activity, Calendar, Clock } from 'lucide-react';
+import { ThumbsUp, Smile, Meh, Frown, AlertTriangle, Activity, Calendar, Clock } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 
 const Dashboard = () => {
@@ -19,11 +19,11 @@ const Dashboard = () => {
   // Get mood icon based on value
   const getMoodIcon = (mood: number) => {
     switch (mood) {
-      case 1: return <FrownOpen className="h-6 w-6 text-red-500" />;
+      case 1: return <AlertTriangle className="h-6 w-6 text-red-500" />;
       case 2: return <Frown className="h-6 w-6 text-orange-500" />;
       case 3: return <Meh className="h-6 w-6 text-yellow-500" />;
       case 4: return <Smile className="h-6 w-6 text-green-500" />;
-      case 5: return <SmileOpen className="h-6 w-6 text-emerald-500" />;
+      case 5: return <ThumbsUp className="h-6 w-6 text-emerald-500" />;
       default: return null;
     }
   };

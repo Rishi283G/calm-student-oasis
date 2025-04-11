@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Smile, Meh, Frown, FrownOpen, SmileOpen } from 'lucide-react';
+import { Frown, Meh, Smile, AlertTriangle, ThumbsUp } from 'lucide-react';
 import { saveMoodEntry, getTodaysMoodEntry, MoodEntry } from '@/utils/storage';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -14,11 +14,11 @@ const MoodSelector: React.FC = () => {
   
   // Mood options
   const moods = [
-    { value: 1, icon: <FrownOpen size={32} />, label: 'Very Bad' },
+    { value: 1, icon: <AlertTriangle size={32} />, label: 'Very Bad' },
     { value: 2, icon: <Frown size={32} />, label: 'Bad' },
     { value: 3, icon: <Meh size={32} />, label: 'Okay' },
     { value: 4, icon: <Smile size={32} />, label: 'Good' },
-    { value: 5, icon: <SmileOpen size={32} />, label: 'Great' }
+    { value: 5, icon: <ThumbsUp size={32} />, label: 'Great' }
   ];
   
   // Check if user already recorded mood today
