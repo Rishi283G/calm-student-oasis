@@ -15,7 +15,7 @@ const Emergency = () => {
           <AlertTitle className="text-red-600 text-lg">Emergency Resources</AlertTitle>
           <AlertDescription className="text-red-800">
             If you're experiencing a mental health emergency, please reach out to one of the crisis resources below.
-            <strong className="block mt-1">If you or someone else is in immediate danger, call emergency services (911 in the US) immediately.</strong>
+            <strong className="block mt-1">🔴 If you or someone else is in immediate danger, call 112 (India's unified emergency number) immediately.</strong>
           </AlertDescription>
         </Alert>
         
@@ -24,7 +24,7 @@ const Emergency = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <PhoneCall className="h-5 w-5 mr-2 text-mindease-peach-dark" />
-                Crisis Hotlines
+                ☎️ Crisis Hotlines (India)
               </CardTitle>
               <CardDescription>
                 24/7 phone support for immediate help
@@ -32,38 +32,38 @@ const Emergency = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="border-b border-mindease-peach pb-3">
-                <h3 className="font-medium">National Suicide Prevention Lifeline</h3>
-                <p className="text-gray-700 mb-1">Call or text 988</p>
-                <p className="text-sm text-gray-500">24/7, free and confidential support for people in distress</p>
+                <h3 className="font-medium">iCall – TISS (Tata Institute of Social Sciences)</h3>
+                <p className="text-gray-700 mb-1">Call: 9152987821</p>
+                <p className="text-sm text-gray-500">Free, confidential psychological support via call/email/chat.</p>
                 <div className="mt-2">
                   <Button asChild variant="outline" size="sm" className="text-mindease-peach-dark border-mindease-peach-dark hover:bg-mindease-peach-light hover:text-mindease-peach-dark">
-                    <a href="tel:988" className="flex items-center">
-                      <PhoneCall className="h-3 w-3 mr-1" /> Call 988
+                    <a href="tel:9152987821" className="flex items-center">
+                      <PhoneCall className="h-3 w-3 mr-1" /> Call: 9152987821
                     </a>
                   </Button>
                 </div>
               </div>
               
               <div className="border-b border-mindease-peach pb-3">
-                <h3 className="font-medium">Crisis Text Line</h3>
-                <p className="text-gray-700 mb-1">Text HOME to 741741</p>
-                <p className="text-sm text-gray-500">24/7 text support with a trained crisis counselor</p>
+                <h3 className="font-medium">AASRA – Suicide Prevention Helpline</h3>
+                <p className="text-gray-700 mb-1">Phone: +91-9820466726</p>
+                <p className="text-sm text-gray-500">Support for people facing suicidal thoughts or deep emotional distress.</p>
                 <div className="mt-2">
                   <Button asChild variant="outline" size="sm" className="text-mindease-peach-dark border-mindease-peach-dark hover:bg-mindease-peach-light hover:text-mindease-peach-dark">
-                    <a href="sms:741741?&body=HOME" className="flex items-center">
-                      <MessageCircle className="h-3 w-3 mr-1" /> Text 741741
+                    <a href="sms:9820466726?&body=HOME" className="flex items-center">
+                      <MessageCircle className="h-3 w-3 mr-1" /> Text +91-9820466726
                     </a>
                   </Button>
                 </div>
               </div>
               
               <div>
-                <h3 className="font-medium">Trevor Project (LGBTQ+ Youth)</h3>
-                <p className="text-gray-700 mb-1">Call 1-866-488-7386</p>
-                <p className="text-sm text-gray-500">Crisis intervention and suicide prevention for LGBTQ+ young people</p>
+                <h3 className="font-medium">Manodarpan – Ministry of Education (India)</h3>
+                <p className="text-gray-700 mb-1">Phone: 8448440632</p>
+                <p className="text-sm text-gray-500">Special helpline for students, teachers, and parents facing stress or anxiety.</p>
                 <div className="mt-2">
                   <Button asChild variant="outline" size="sm" className="text-mindease-peach-dark border-mindease-peach-dark hover:bg-mindease-peach-light hover:text-mindease-peach-dark">
-                    <a href="tel:18664887386" className="flex items-center">
+                    <a href="tel:8448440632" className="flex items-center">
                       <PhoneCall className="h-3 w-3 mr-1" /> Call Hotline
                     </a>
                   </Button>
@@ -76,44 +76,44 @@ const Emergency = () => {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Globe className="h-5 w-5 mr-2 text-mindease-blue-dark" />
-                Online Resources
+                🌐 Online Resources (India)
               </CardTitle>
               <CardDescription>
-                Websites with immediate help and resources
+              Easy-access websites and tools offering support, therapy, and self-assessments.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="border-b border-mindease-blue/30 pb-3">
-                <h3 className="font-medium">National Alliance on Mental Illness (NAMI)</h3>
+                <h3 className="font-medium">YourDOST</h3>
                 <p className="text-sm text-gray-600 mb-2">
-                  Information, resource referrals and support for people living with mental health conditions.
+                Anonymous chat with psychologists, relationship and career stress support.
                 </p>
                 <Button asChild variant="outline" size="sm" className="text-mindease-blue-dark border-mindease-blue hover:bg-mindease-blue-light hover:text-mindease-blue-dark">
-                  <a href="https://www.nami.org/help" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <a href="https://yourdost.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <ExternalLink className="h-3 w-3 mr-1" /> Visit Website
                   </a>
                 </Button>
               </div>
               
               <div className="border-b border-mindease-blue/30 pb-3">
-                <h3 className="font-medium">ULifeline</h3>
+                <h3 className="font-medium">MindPeers</h3>
                 <p className="text-sm text-gray-600 mb-2">
-                  Mental health resources for college students, including a self-evaluation tool and campus-specific resources.
+                Self-assessment tools, therapy booking, AI-based mood mapping.
                 </p>
                 <Button asChild variant="outline" size="sm" className="text-mindease-blue-dark border-mindease-blue hover:bg-mindease-blue-light hover:text-mindease-blue-dark">
-                  <a href="https://www.ulifeline.org/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <a href="https://mindpeers.co" target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <ExternalLink className="h-3 w-3 mr-1" /> Visit Website
                   </a>
                 </Button>
               </div>
               
               <div>
-                <h3 className="font-medium">Mental Health America</h3>
+                <h3 className="font-medium">Manodarpan Resources Hub</h3>
                 <p className="text-sm text-gray-600 mb-2">
-                  Tools, screening, and resources to support mental health.
+                Mental wellness videos, academic stress guides, teacher training.
                 </p>
                 <Button asChild variant="outline" size="sm" className="text-mindease-blue-dark border-mindease-blue hover:bg-mindease-blue-light hover:text-mindease-blue-dark">
-                  <a href="https://mhanational.org/finding-help" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <a href="https://manodarpan.education.gov.in" target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <ExternalLink className="h-3 w-3 mr-1" /> Visit Website
                   </a>
                 </Button>

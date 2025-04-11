@@ -1,13 +1,23 @@
 
 import React from 'react';
+
+
 import Layout from '@/components/Layout';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, BookOpen, Coffee, Moon, Brain, Dumbbell, Heart } from 'lucide-react';
 
-const Resources = () => {
+
+
+
+
+import RoutinePreview from '@/components/image';
+
+const Dashboard: React.FC = () => {
   return (
+    <div className="p-6 flex flex-col min-h-screen">
+
     <Layout>
       <div className="page-container">
         <div className="mb-8">
@@ -293,6 +303,7 @@ const Resources = () => {
                 </div>
               </CardContent>
             </Card>
+            <RoutinePreview />
           </TabsContent>
           
           <TabsContent value="resources" className="space-y-6">
@@ -309,28 +320,28 @@ const Resources = () => {
                     <h3 className="font-medium text-lg">Mental Health Websites</h3>
                     
                     <div className="space-y-1">
-                      <h4 className="font-medium">Active Minds</h4>
-                      <p className="text-gray-600 text-sm">Resources for student mental health and campus programs</p>
+                      <h4 className="font-medium">iCall – TISS</h4>
+                      <p className="text-gray-600 text-sm">Free and confidential counseling via phone and email by trained psychologists from Tata Institute of Social Sciences.</p>
                       <Button variant="link" className="p-0 h-auto text-mindease-blue" asChild>
-                        <a href="https://www.activeminds.org/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <a href="https://icallhelpline.org" target="_blank" rel="noopener noreferrer" className="flex items-center">
                           Visit <ExternalLink className="h-3 w-3 ml-1" />
                         </a>
                       </Button>
                     </div>
                     
                     <div className="space-y-1">
-                      <h4 className="font-medium">ULifeline</h4>
-                      <p className="text-gray-600 text-sm">Online resource for college mental health</p>
+                      <h4 className="font-medium">YourDOST</h4>
+                      <p className="text-gray-600 text-sm">Online emotional wellness platform connecting students with experts.</p>
                       <Button variant="link" className="p-0 h-auto text-mindease-blue" asChild>
-                        <a href="https://www.ulifeline.org/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                        <a href="https://yourdost.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
                           Visit <ExternalLink className="h-3 w-3 ml-1" />
                         </a>
                       </Button>
                     </div>
                     
                     <div className="space-y-1">
-                      <h4 className="font-medium">National Alliance on Mental Illness (NAMI)</h4>
-                      <p className="text-gray-600 text-sm">Mental health resources and support groups</p>
+                      <h4 className="font-medium">Vandrevala Foundation</h4>
+                      <p className="text-gray-600 text-sm">Offers 24x7 free helpline and counseling by professionals.</p>
                       <Button variant="link" className="p-0 h-auto text-mindease-blue" asChild>
                         <a href="https://www.nami.org/Your-Journey/Teens-Young-Adults" target="_blank" rel="noopener noreferrer" className="flex items-center">
                           Visit <ExternalLink className="h-3 w-3 ml-1" />
@@ -421,7 +432,17 @@ const Resources = () => {
         </Tabs>
       </div>
     </Layout>
+
+    <div className="flex-grow">
+        {/* All other dashboard sections */}
+      </div>
+
+      {/* Image at the bottom */}
+     
+    </div>
   );
 };
 
-export default Resources;
+export default Dashboard;
+
+
