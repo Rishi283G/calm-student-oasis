@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +20,34 @@ export default {
 		},
 		extend: {
 			colors: {
+				// MindEase custom palette
+				mindease: {
+					blue: {
+						light: "#D3E4FD",
+						DEFAULT: "#8AB6F9",
+						dark: "#5A8AE0"
+					},
+					green: {
+						light: "#F2FCE2",
+						DEFAULT: "#A2D6A8",
+						dark: "#6EAB76"
+					},
+					purple: {
+						light: "#E5DEFF",
+						DEFAULT: "#B4A1F7",
+						dark: "#8878D2"
+					},
+					peach: {
+						light: "#FDE1D3",
+						DEFAULT: "#FBB59D",
+						dark: "#F58E6E"
+					},
+					gray: {
+						light: "#F1F0FB",
+						DEFAULT: "#D1D0E3",
+						dark: "#8E9196"
+					}
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -68,6 +97,13 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+			},
+			boxShadow: {
+				'soft': '0 4px 14px 0 rgba(0, 0, 0, 0.05)',
+				'softer': '0 6px 20px rgba(0, 0, 0, 0.03)',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {
@@ -84,11 +120,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-5px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
